@@ -5,9 +5,9 @@ def greedy_cost(move_dict, n, greedy_dict):
 	move_index = 0
 	for i in range(len(ratios)):
 		if ratios[i] > ratios[move_index]:
-			move_index = i; 
+			move_index = i 
 		if ratios[i] == ratios[move_index] and legal_move[i] > legal_move[move_index]:
-			move_index = i; 
+			move_index = i 
 	
 	move = legal_move[move_index]
 	if move == 1:
